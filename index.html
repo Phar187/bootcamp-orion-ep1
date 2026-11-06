@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leterizza: aprenda a ler o mundo digital com mais confiança. Explore informação, convivência e tecnologia no dia a dia." />
+    <title>Leterizza | Aprender para conectar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="header container">
+      <a class="brand" href="#inicio" aria-label="Leterizza, início">
+        <span class="brand-icon" aria-hidden="true">le.</span>
+        Leterizza
+      </a>
+      <a class="nav-link" href="#temas">Explorar temas</a>
+    </header>
+
+    <main id="inicio" class="container">
+      <section class="hero" aria-labelledby="titulo">
+        <div>
+          <p class="eyebrow">EDUCAÇÃO DIGITAL, NA PRÁTICA</p>
+          <h1 id="titulo">Aprenda a ler<br />o mundo <span>digital.</span></h1>
+          <p class="intro">Na Leterizza, cada descoberta começa com uma pergunta. Explore informação, convivência e tecnologia para fazer escolhas mais conscientes na internet.</p>
+          <a class="button" href="#temas">
+            Quero aprender
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+          </a>
+        </div>
+
+        <aside class="tip-panel" aria-labelledby="dica-titulo">
+          <span class="panel-tag">UMA IDEIA PARA HOJE</span>
+          <svg class="icon tip-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4M8.1 14.4a6 6 0 1 1 7.8 0c-.9.7-.9 1.6-.9 2.6H9c0-1 0-1.9-.9-2.6Z" /></svg>
+          <h2 id="dica-titulo">Uma pausa<br />para pensar.</h2>
+          <p id="dica" aria-live="polite" aria-atomic="true">Antes de compartilhar uma notícia, confira a fonte e a data da publicação.</p>
+          <button id="botao-dica" type="button">
+            Ver outra dica
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+          </button>
+        </aside>
+      </section>
+
+      <section id="temas" class="topics" aria-labelledby="temas-titulo">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">APRENDER COMEÇA AQUI</p>
+            <h2 id="temas-titulo">Três temas para começar.</h2>
+          </div>
+          <p>Mais consciência em cada clique.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4 4" /></svg>
+              <span class="card-number">01</span>
+            </div>
+            <h3>Informação com critério</h3>
+            <p>Nem tudo o que aparece na tela é confiável. Compare fontes, leia além do título e procure o contexto.</p>
+            <p class="practice"><strong>Experimente:</strong> procure a mesma notícia em duas fontes diferentes.</p>
+          </article>
+          <article class="card">
+            <div class="card-top" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-3 3 2-7a8.5 8.5 0 1 1 18-4.5Z" /></svg>
+              <span class="card-number">02</span>
+            </div>
+            <h3>Convivência digital</h3>
+            <p>Do outro lado da tela também tem uma pessoa. Respeite opiniões e peça permissão antes de publicar fotos de alguém.</p>
+            <p class="practice"><strong>Experimente:</strong> releia um comentário antes de enviá-lo.</p>
+          </article>
+          <article class="card">
+            <div class="card-top" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1m0-15c3-2 7-2 10-1v15c-3-1-7-1-10 1V5Z" /></svg>
+              <span class="card-number">03</span>
+            </div>
+            <h3>Tecnologia para aprender</h3>
+            <p>Use ferramentas digitais para explorar assuntos, organizar ideias e transformar conhecimento em pequenos projetos.</p>
+            <p class="practice"><strong>Experimente:</strong> escolha um tema e anote três coisas que aprendeu.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <span>Leterizza <span aria-hidden="true">·</span> Aprender para conectar.</span>
+      <span>Informação, respeito e autonomia.</span>
+    </footer>
+  </body>
+</html>

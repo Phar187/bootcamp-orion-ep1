@@ -19,3 +19,27 @@ botaoDica.addEventListener("click", () => {
   indiceDica = (indiceDica + 1) % dicas.length;
   textoDica.textContent = dicas[indiceDica];
 });
+
+// O formulário do quiz só é enviado depois de escolher uma das opções.
+const formularioQuiz = document.getElementById("formulario-quiz");
+const resultadoQuiz = document.getElementById("resultado-quiz");
+
+formularioQuiz.addEventListener("submit", (evento) => {
+  // Mostra o resultado na própria página, sem recarregá-la.
+  evento.preventDefault();
+  const resposta = formularioQuiz.elements.resposta.value;
+
+  if (resposta === "verificar") {
+    resultadoQuiz.textContent = "Você acertou! Conferir a fonte e a data ajuda a avaliar a notícia antes de compartilhar.";
+    resultadoQuiz.dataset.status = "correto";
+  } else {
+    resultadoQuiz.textContent = "Ainda não. Um título chamativo não garante que a notícia seja confiável. Confira a fonte e a data antes de compartilhar.";
+    resultadoQuiz.dataset.status = "incorreto";
+  }
+});
+
+// Limpa o resultado anterior quando a pessoa escolhe outra resposta.
+formularioQuiz.addEventListener("change", () => {
+  resultadoQuiz.textContent = "";
+  delete resultadoQuiz.dataset.status;
+});

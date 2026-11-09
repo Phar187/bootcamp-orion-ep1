@@ -83,6 +83,33 @@
           </article>
         </div>
       </section>
+
+      <section id="quiz" class="quiz" aria-labelledby="quiz-titulo">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">VAMOS PRATICAR</p>
+            <h2 id="quiz-titulo">Uma pergunta para você.</h2>
+          </div>
+          <p>Teste o que acabou de aprender.</p>
+        </div>
+
+        <form id="formulario-quiz" class="quiz-card">
+          <fieldset aria-describedby="quiz-instrucao">
+            <legend>Antes de compartilhar uma notícia, qual é a melhor atitude?</legend>
+            <p id="quiz-instrucao" class="quiz-instruction">Escolha uma opção e confira sua resposta.</p>
+            <label class="quiz-option">
+              <input type="radio" name="resposta" value="verificar" required />
+              <span>Conferir a fonte e a data da publicação.</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="resposta" value="compartilhar" required />
+              <span>Compartilhar imediatamente porque o título chamou atenção.</span>
+            </label>
+          </fieldset>
+          <button class="button" type="submit">Conferir resposta</button>
+          <p id="resultado-quiz" class="quiz-result" role="status" aria-atomic="true"></p>
+        </form>
+      </section>
     </main>
 
     <footer class="footer container">
